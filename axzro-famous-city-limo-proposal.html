@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AXZRO × Famous City Limousine — Partnership Proposal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,700;1,6..96,400&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --obsidian:#E9E1D4;
+  --graphite:#F3EDE2;
+  --panel:#FBF7EF;
+  --line:#C9BCA6;
+  --bone:#241C1B;
+  --slate:#6A5F55;
+  --gold:#7A5A16;
+  --gold-dim:#B4934F;
+  --signal:#1F5145;
+  --signal-dim:#6E9A8C;
+  --ok:#3F7A52;
+  --wine:#8E2F45;
+  --ink-deep:#241C1B;
+
+  --ff-mono:"IBM Plex Mono", ui-monospace, monospace;
+
+  --gut: clamp(20px, 5vw, 72px);
+  --maxw: 1180px;
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:var(--obsidian);
+  color:var(--bone);
+  font-family:var(--ff-body);
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;}
+a{color:var(--gold);}
+
+/* ---------- shared layout ---------- */
+.wrap{max-width:var(--maxw); margin:0 auto; padding:0 var(--gut);}
+.band{padding:clamp(64px,9vw,128px) 0; position:relative;}
+.band + .band{border-top:1px solid var(--line);}
+
+.eyebrow{
+  font-family:var(--ff-mono);
+  font-size:11px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:var(--slate);
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin:0 0 22px;
+}
+.eyebrow::before{
+  content:"";
+  width:26px;height:1px;background:var(--gold-dim);flex:none;
+}
+h2.sec{
+  font-family:var(--ff-display);
+  font-weight:400;
+  font-size:clamp(30px,4.6vw,54px);
+  line-height:1.08;
+  letter-spacing:-.01em;
+  margin:0 0 18px;
+}
+h2.sec em{font-style:italic; color:var(--gold);}
+.lede{
+  max-width:62ch;
+  color:#514840;
+  font-size:clamp(16px,1.6vw,18.5px);
+  margin:0 0 40px;
+}
+.gold{color:var(--gold);}
+.warn-em{font-style:italic; color:#8E2F45;}
+.gold-em{font-style:italic; color:var(--gold);}
+.violet{color:var(--signal);}
+
+/* ---------- hero ---------- */
+.hero{
+  min-height:100svh;
+  display:flex;
+  align-items:center;
+  position:relative;
+  overflow:hidden;
+  padding:120px 0 90px;
+}
+.hero-grid{
+  position:absolute; inset:0;
+  background-image:linear-gradient(var(--line) 1px, transparent 1px),linear-gradient(90deg,var(--line) 1px, transparent 1px);
+  background-size:64px 64px;
+  opacity:.28;
+  mask-image:radial-gradient(ellipse 80% 62% at 50% 40%, #000 20%, transparent 78%);
+  -webkit-mask-image:radial-gradient(ellipse 80% 62% at 50% 40%, #000 20%, transparent 78%);
+}
+.hero-glow{
+  position:absolute; left:50%; top:-10%; width:min(1100px,120vw); aspect-ratio:1;
+  transform:translateX(-50%);
+  background:radial-gradient(circle at 38% 42%, rgba(138,106,34,.16), transparent 55%),
+             radial-gradient(circle at 66% 55%, rgba(31,81,69,.13), transparent 55%);
+  filter:blur(10px);
+  pointer-events:none;
+}
+.hero .wrap{position:relative; z-index:2; width:100%;}
+.marks{
+  display:flex; align-items:center; gap:18px; flex-wrap:wrap;
+  font-family:var(--ff-mono); font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:var(--slate);
+  margin-bottom:38px;
+}
+.marks b{color:var(--bone); font-weight:500; letter-spacing:.16em;}
+.marks .x{color:var(--gold); font-size:15px;}
+h1{
+  font-family:var(--ff-display);
+  font-weight:400;
+  font-size:clamp(42px,8.2vw,104px);
+  line-height:.98;
+  letter-spacing:-.025em;
+  margin:0 0 26px;
+  max-width:15ch;
+}
+h1 .it{font-style:italic;}
+h1 .rule{
+  display:block; width:0; height:2px; background:linear-gradient(90deg,var(--gold),var(--signal));
+  margin:26px 0 0; animation:grow 1.5s .5s cubic-bezier(.2,.8,.2,1) forwards;
+}
+@keyframes grow{to{width:min(420px,70%);}}
+.hero-sub{max-width:56ch; color:#514840; font-size:clamp(16px,1.7vw,19px); margin:0 0 44px;}
+.hero-stats{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:1px;
+  background:var(--line); border:1px solid var(--line);
+}
+.hstat{background:var(--obsidian); padding:22px 20px;}
+.hstat .n{font-family:var(--ff-display); font-size:clamp(28px,3.6vw,40px); line-height:1; display:block;}
+.hstat .l{font-family:var(--ff-mono); font-size:10.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--slate); margin-top:10px; display:block;}
+.hstat:nth-child(1) .n{color:var(--gold);}
+.hstat:nth-child(4) .n{color:var(--signal);}
+.marklink{color:var(--bone); text-decoration:none; border-bottom:1px solid var(--gold-dim);}
+.marklink:hover{color:var(--gold);}
+.byline{
+  font-size:14px; color:var(--slate); margin:-18px 0 36px; max-width:56ch; line-height:1.6;
+}
+.byline b{color:var(--bone); font-weight:600; letter-spacing:.01em;}
+.byline a{color:var(--gold); text-decoration:none; border-bottom:1px solid var(--gold-dim);}
+.byline a:hover{color:var(--bone); border-color:var(--bone);}
+
+/* economics reality panel */
+.reality{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:1px;
+  background:var(--line); border:1px solid var(--line); margin-bottom:40px;
+}
+.rcell{background:var(--graphite); padding:26px 24px;}
+.rcell .rk{font-family:var(--ff-mono); font-size:10.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--slate); margin-bottom:12px;}
+.rcell .rv2{font-family:var(--ff-display); font-size:clamp(26px,3.4vw,38px); line-height:1.05; margin-bottom:10px;}
+.rcell p{margin:0; font-size:13.5px; color:var(--slate); line-height:1.6;}
+.rcell.warn{background:linear-gradient(180deg,rgba(142,47,69,.06),var(--graphite)); border:0;}
+.rcell.warn .rv2{color:#8E2F45;}
+.rcell.good .rv2{color:var(--ok);}
+
+.traj{border:1px solid var(--line); background:var(--graphite); padding:clamp(18px,3vw,30px); margin-top:34px;}
+.traj h4{font-family:var(--ff-mono); font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--slate); margin:0 0 22px;}
+.traj svg{width:100%; height:auto; display:block;}
+.trajleg{display:flex; gap:26px; flex-wrap:wrap; margin-top:20px; font-family:var(--ff-mono); font-size:10.5px; letter-spacing:.13em; text-transform:uppercase; color:var(--slate);}
+.trajleg i{display:inline-block; width:20px; height:3px; margin-right:9px; vertical-align:middle;}
+
+.signoff{
+  border:1px solid var(--line); background:var(--graphite); padding:clamp(26px,4vw,40px);
+  max-width:620px; margin:52px auto 0; text-align:left;
+}
+.signoff .sname{font-family:var(--ff-display); font-size:clamp(22px,3vw,30px); margin:0 0 6px;}
+.signoff .srole{font-family:var(--ff-mono); font-size:10.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--gold); margin:0 0 16px;}
+.signoff p{margin:0; font-size:14px; color:var(--slate);}
+.signoff a{color:var(--gold); text-decoration:none; border-bottom:1px solid var(--gold-dim);}
+.signoff a:hover{color:var(--bone); border-color:var(--bone);}
+
+.scrollcue{
+  margin-top:52px; font-family:var(--ff-mono); font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--slate);
+  display:flex; align-items:center; gap:10px;
+}
+.scrollcue span.dot{width:6px;height:6px;border-radius:50%;background:var(--gold);animation:pulse 2.4s infinite;}
+@keyframes pulse{0%,100%{opacity:.3}50%{opacity:1}}
+
+/* ---------- audit ---------- */
+.audit{display:grid; grid-template-columns:repeat(auto-fit,minmax(255px,1fr)); gap:18px;}
+.acard{
+  border:1px solid var(--line); background:var(--graphite); padding:26px 24px; position:relative;
+}
+.acard .tag{
+  font-family:var(--ff-mono); font-size:10px; letter-spacing:.18em; text-transform:uppercase;
+  color:#8E2F45; border:1px solid rgba(142,47,69,.35); padding:3px 8px; display:inline-block; margin-bottom:16px;
+}
+.acard h3{font-family:var(--ff-body); font-size:17px; font-weight:600; margin:0 0 10px;}
+.acard p{margin:0; color:var(--slate); font-size:14.5px; line-height:1.62;}
+
+/* ---------- model switch ---------- */
+.switchbar{
+  display:inline-flex; border:1px solid var(--line); background:var(--graphite); padding:5px; gap:4px; margin-bottom:40px;
+}
+.switchbar button{
+  font-family:var(--ff-mono); font-size:11.5px; letter-spacing:.14em; text-transform:uppercase;
+  background:none; border:0; color:var(--slate); padding:11px 20px; cursor:pointer; transition:.25s;
+}
+.switchbar button[aria-selected="true"]{background:var(--bone); color:var(--obsidian);}
+.switchbar button:focus-visible{outline:2px solid var(--signal); outline-offset:2px;}
+
+.modelpane{display:none; animation:fade .45s ease both;}
+.modelpane.on{display:block;}
+@keyframes fade{from{opacity:0; transform:translateY(10px);} to{opacity:1; transform:none;}}
+.modelgrid{display:grid; grid-template-columns:1.05fr .95fr; gap:clamp(24px,4vw,56px); align-items:center;}
+.mfacts{list-style:none; padding:0; margin:0;}
+.mfacts li{
+  display:flex; gap:16px; padding:16px 0; border-bottom:1px solid var(--line); align-items:flex-start;
+}
+.mfacts li:last-child{border-bottom:0;}
+.mfacts .k{
+  font-family:var(--ff-mono); font-size:10.5px; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--slate); width:104px; flex:none; padding-top:4px;
+}
+.mfacts .v{font-size:15.5px;}
+.mfacts .v strong{font-weight:600;}
+.pane-b .mfacts .v strong{color:var(--signal);}
+.pane-a .mfacts .v strong{color:var(--gold);}
+
+.diagram{border:1px solid var(--line); background:var(--graphite); padding:20px;}
+.diagram svg{display:block; width:100%; height:auto;}
+.flowdash{stroke-dasharray:5 7; animation:dash 2.4s linear infinite;}
+@keyframes dash{to{stroke-dashoffset:-48;}}
+
+/* ---------- channels ---------- */
+.chan{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px;}
+.chcard{
+  border:1px solid var(--line); background:linear-gradient(180deg,var(--graphite),var(--obsidian));
+  padding:30px 26px; transition:.35s; position:relative; overflow:hidden;
+}
+.chcard::after{content:""; position:absolute; left:0; top:0; height:2px; width:0; background:var(--gold); transition:.5s;}
+.chcard:hover::after{width:100%;}
+.chcard:hover{transform:translateY(-4px); border-color:var(--gold-dim);}
+.chnum{font-family:var(--ff-mono); font-size:11px; color:var(--gold-dim); letter-spacing:.2em;}
+.chcard h3{font-family:var(--ff-display); font-size:26px; font-weight:400; margin:14px 0 6px;}
+.chwant{font-family:var(--ff-mono); font-size:10.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--slate); margin:0 0 18px;}
+.chcard ul{margin:0; padding-left:18px; color:#514840; font-size:14.5px;}
+.chcard li{margin-bottom:8px;}
+.chcard li::marker{color:var(--gold-dim);}
+
+/* ---------- the split (signature) ---------- */
+.splitwrap{border:1px solid var(--line); background:var(--graphite); padding:clamp(18px,3vw,34px);}
+.splitwrap svg{width:100%; height:auto; display:block;}
+.laneleg{display:flex; gap:28px; flex-wrap:wrap; margin-top:26px; font-family:var(--ff-mono); font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--slate);}
+.laneleg i{display:inline-block; width:22px; height:3px; margin-right:9px; vertical-align:middle;}
+
+.splittable{display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--line); border:1px solid var(--line); margin-top:34px;}
+.splitcol{background:var(--obsidian); padding:30px 26px;}
+.splitcol h4{
+  font-family:var(--ff-mono); font-size:11px; letter-spacing:.18em; text-transform:uppercase; margin:0 0 6px;
+}
+.splitcol .who{font-family:var(--ff-display); font-size:26px; margin:0 0 22px; font-weight:400;}
+.splitcol ul{list-style:none; margin:0; padding:0;}
+.splitcol li{padding:11px 0 11px 26px; border-bottom:1px solid var(--line); font-size:15px; position:relative;}
+.splitcol li:last-child{border-bottom:0;}
+.splitcol li::before{position:absolute; left:0; top:11px; font-family:var(--ff-mono); font-size:13px;}
+.col-rose h4{color:var(--gold);}
+.col-rose li::before{content:"◆"; color:var(--gold-dim); font-size:9px; top:14px;}
+.col-ax h4{color:var(--signal);}
+.col-ax li::before{content:"◆"; color:var(--signal-dim); font-size:9px; top:14px;}
+
+/* ---------- pipeline stepper ---------- */
+.pipe{display:grid; grid-template-columns:300px 1fr; gap:1px; background:var(--line); border:1px solid var(--line);}
+.pipenav{background:var(--obsidian); padding:0;}
+.pipenav button{
+  display:block; width:100%; text-align:left; background:none; border:0; border-bottom:1px solid var(--line);
+  padding:17px 22px; color:var(--slate); cursor:pointer; font-family:var(--ff-body); font-size:14.5px;
+  transition:.22s; position:relative;
+}
+.pipenav button:last-child{border-bottom:0;}
+.pipenav button .idx{font-family:var(--ff-mono); font-size:10.5px; color:var(--gold-dim); margin-right:14px;}
+.pipenav button:hover{color:var(--bone); background:#E2D8C7;}
+.pipenav button[aria-selected="true"]{color:var(--bone); background:var(--panel);}
+.pipenav button[aria-selected="true"] .idx{color:var(--signal);}
+.pipenav button[aria-selected="true"]::before{content:""; position:absolute; left:0; top:0; bottom:0; width:2px; background:var(--signal);}
+.pipenav button:focus-visible{outline:2px solid var(--signal); outline-offset:-2px;}
+.pipebody{background:var(--panel); padding:clamp(26px,4vw,44px);}
+.pipepane{display:none;}
+.pipepane.on{display:block; animation:fade .4s ease both;}
+.pipepane h3{font-family:var(--ff-display); font-size:clamp(24px,3vw,34px); font-weight:400; margin:0 0 6px;}
+.pipepane .owner{font-family:var(--ff-mono); font-size:10.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--signal); margin:0 0 20px;}
+.pipepane p{color:#514840; margin:0 0 20px; max-width:56ch;}
+.pipepane .feat{list-style:none; padding:0; margin:0; display:grid; gap:10px;}
+.pipepane .feat li{font-size:14.5px; padding-left:22px; position:relative; color:#514840;}
+.pipepane .feat li::before{content:"→"; position:absolute; left:0; color:var(--signal-dim); font-family:var(--ff-mono);}
+
+/* ---------- website rebuild ---------- */
+.ba{display:grid; grid-template-columns:1fr 1fr; gap:18px;}
+.bacard{border:1px solid var(--line); padding:28px 26px; background:var(--graphite);}
+.bacard.after{border-color:var(--signal-dim); background:linear-gradient(180deg,rgba(31,81,69,.05),var(--graphite));}
+.bacard h4{font-family:var(--ff-mono); font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--slate); margin:0 0 18px;}
+.bacard.after h4{color:var(--signal);}
+.bacard ul{margin:0; padding:0; list-style:none;}
+.bacard li{font-size:14.5px; padding:10px 0 10px 24px; border-bottom:1px solid var(--line); position:relative; color:#514840;}
+.bacard li:last-child{border-bottom:0;}
+.bacard li::before{content:"✕"; position:absolute; left:0; color:#8E2F45; font-size:11px; top:12px;}
+.bacard.after li::before{content:"✓"; color:var(--ok);}
+
+/* ---------- calculator ---------- */
+.calc{display:grid; grid-template-columns:.9fr 1.1fr; gap:1px; background:var(--line); border:1px solid var(--line);}
+.calcinputs{background:var(--obsidian); padding:clamp(26px,3.5vw,38px);}
+.calcout{background:var(--panel); padding:clamp(26px,3.5vw,38px);}
+.field{margin-bottom:32px;}
+.field label{display:flex; justify-content:space-between; align-items:baseline; gap:12px; margin-bottom:14px;}
+.field .lname{font-family:var(--ff-mono); font-size:10.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--slate);}
+.field .lval{font-family:var(--ff-display); font-size:26px; color:var(--bone);}
+input[type=range]{
+  -webkit-appearance:none; appearance:none; width:100%; height:2px; background:var(--line); outline:none; margin:0;
+}
+input[type=range]::-webkit-slider-thumb{
+  -webkit-appearance:none; width:20px; height:20px; border-radius:50%; background:var(--bone); cursor:pointer; border:4px solid var(--obsidian); box-shadow:0 0 0 1px var(--slate);
+}
+input[type=range]::-moz-range-thumb{
+  width:14px;height:14px;border-radius:50%;background:var(--bone);cursor:pointer;border:3px solid var(--obsidian);box-shadow:0 0 0 1px var(--slate);
+}
+input[type=range]:focus-visible::-webkit-slider-thumb{box-shadow:0 0 0 2px var(--signal);}
+#retail::-webkit-slider-thumb{background:var(--gold);}
+#contract::-webkit-slider-thumb{background:var(--signal);}
+.field .hint{font-size:12.5px; color:var(--slate); margin-top:12px;}
+
+.bars{margin-bottom:8px;}
+.barrow{margin-bottom:26px;}
+.barhead{display:flex; justify-content:space-between; align-items:baseline; margin-bottom:9px;}
+.barhead .t{font-family:var(--ff-mono); font-size:10.5px; letter-spacing:.13em; text-transform:uppercase; color:var(--slate);}
+.barhead .amt{font-family:var(--ff-display); font-size:clamp(24px,3vw,34px);}
+.bartrack{height:10px; background:var(--graphite); border:1px solid var(--line); overflow:hidden;}
+.barfill{height:100%; width:0; transition:width .55s cubic-bezier(.2,.8,.2,1);}
+.fill-now{background:linear-gradient(90deg,var(--gold-dim),var(--gold));}
+.fill-new{background:linear-gradient(90deg,var(--signal-dim),var(--signal));}
+.delta{
+  border:1px solid var(--line); padding:20px 22px; margin-top:6px; background:var(--obsidian);
+  display:flex; justify-content:space-between; align-items:center; gap:18px; flex-wrap:wrap;
+}
+.delta .lab{font-family:var(--ff-mono); font-size:10.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--slate);}
+.delta .big{font-family:var(--ff-display); font-size:clamp(26px,3.4vw,38px); color:var(--ok);}
+.delta .big.neg{color:#8E2F45;}
+.capacity{border-top:1px solid var(--line); padding-top:26px; margin-top:4px;}
+.caphead{display:flex; justify-content:space-between; align-items:baseline; margin-bottom:12px;}
+.capval{font-family:var(--ff-display); font-size:26px; color:var(--ok);}
+.capval.hot{color:#8E2F45;}
+.captrack{height:8px; background:var(--graphite); border:1px solid var(--line); overflow:hidden;}
+.capfill{height:100%; width:0; background:linear-gradient(90deg,var(--signal-dim),var(--ok)); transition:width .55s cubic-bezier(.2,.8,.2,1);}
+.capfill.hot{background:linear-gradient(90deg,var(--gold),#8E2F45);}
+
+.pnl{border:1px solid var(--line); margin-top:26px;}
+.pnlrow{
+  display:flex; justify-content:space-between; align-items:baseline; gap:16px;
+  padding:13px 20px; border-bottom:1px solid var(--line); font-size:14.5px; color:#514840;
+}
+.pnlrow:last-child{border-bottom:0;}
+.pnlrow b{font-family:var(--ff-mono); font-size:14px; color:var(--bone); font-weight:500; white-space:nowrap;}
+.pnlrow.total{background:var(--obsidian);}
+.pnlrow.total b{color:var(--bone); font-size:16px;}
+.pnlrow.split{background:rgba(31,81,69,.06);}
+.pnlrow.split b{color:var(--signal);}
+
+.breakeven{font-size:13.5px; color:var(--slate); margin-top:18px; line-height:1.6;}
+.breakeven b{color:var(--bone); font-weight:500;}
+.assump{
+  margin-top:30px; border-top:1px solid var(--line); padding-top:20px;
+  font-size:12.5px; color:var(--slate); line-height:1.65;
+}
+.assump code{font-family:var(--ff-mono); color:var(--gold-dim); font-size:12px;}
+
+/* ---------- timeline ---------- */
+.tl{position:relative; padding-left:0;}
+.tlitem{
+  display:grid; grid-template-columns:120px 1fr; gap:clamp(18px,3vw,44px);
+  padding:30px 0; border-top:1px solid var(--line);
+}
+.tlitem:last-child{border-bottom:1px solid var(--line);}
+.tlph{font-family:var(--ff-mono); font-size:10.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--gold); padding-top:5px;}
+.tlph small{display:block; color:var(--slate); letter-spacing:.1em; margin-top:6px;}
+.tlbody h4{font-family:var(--ff-display); font-size:clamp(21px,2.6vw,28px); font-weight:400; margin:0 0 10px;}
+.tlbody p{margin:0 0 14px; color:#514840; max-width:60ch; font-size:15px;}
+.chips{display:flex; flex-wrap:wrap; gap:8px;}
+.chip{
+  font-family:var(--ff-mono); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase;
+  border:1px solid var(--line); color:var(--slate); padding:5px 10px;
+}
+
+/* ---------- terms ---------- */
+.terms{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:18px;}
+.term{border:1px solid var(--line); padding:26px 24px; background:var(--graphite);}
+.term .h{font-family:var(--ff-mono); font-size:10.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--slate); margin-bottom:14px;}
+.term .b{font-family:var(--ff-display); font-size:clamp(24px,3vw,32px); margin-bottom:12px; line-height:1.1;}
+.term p{margin:0; font-size:14px; color:var(--slate); line-height:1.6;}
+.term.hi{border-color:var(--gold-dim); background:linear-gradient(180deg,rgba(138,106,34,.07),var(--graphite));}
+.term.hi .b{color:var(--gold);}
+
+/* ---------- close ---------- */
+.close{text-align:center; padding:clamp(80px,11vw,150px) 0;}
+.close h2{font-family:var(--ff-display); font-size:clamp(32px,6vw,66px); font-weight:400; line-height:1.05; margin:0 auto 26px; max-width:20ch;}
+.close h2 em{font-style:italic; color:var(--gold);}
+.close p{max-width:56ch; margin:0 auto 42px; color:#514840;}
+.ctas{display:flex; gap:14px; justify-content:center; flex-wrap:wrap;}
+.btn{
+  font-family:var(--ff-mono); font-size:11.5px; letter-spacing:.16em; text-transform:uppercase;
+  padding:17px 32px; text-decoration:none; border:1px solid var(--bone); color:var(--bone); transition:.25s; display:inline-block;
+}
+.btn.primary{background:var(--bone); color:var(--obsidian);}
+.btn:hover{background:var(--gold); border-color:var(--gold); color:var(--obsidian);}
+footer{border-top:1px solid var(--line); padding:36px 0; font-family:var(--ff-mono); font-size:10.5px; letter-spacing:.13em; text-transform:uppercase; color:var(--slate);}
+footer .wrap{display:flex; justify-content:space-between; gap:18px; flex-wrap:wrap;}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s cubic-bezier(.2,.8,.2,1);}
+.rv.in{opacity:1; transform:none;}
+
+/* ---------- responsive ---------- */
+@media (max-width:900px){
+  .modelgrid,.splittable,.pipe,.calc,.ba{grid-template-columns:1fr;}
+  .pipenav{display:flex; overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  .pipenav button{border-bottom:0; border-right:1px solid var(--line); white-space:nowrap; padding:15px 18px;}
+  .pipenav button[aria-selected="true"]::before{top:auto; bottom:0; left:0; right:0; width:auto; height:2px;}
+  .tlitem{grid-template-columns:1fr; gap:14px;}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none !important; transition:none !important;}
+  .rv{opacity:1; transform:none;}
+  h1 .rule{width:min(420px,70%);}
+}
+@media print{
+  body{background:#fff; color:#000;}
+  .modelpane,.pipepane{display:block !important;}
+}
+
+
+/* ================= luxury refinements ================= */
+body{
+  background:
+    radial-gradient(ellipse 55% 38% at 10% 3%, rgba(138,106,34,.07), transparent 62%),
+    radial-gradient(ellipse 48% 40% at 94% 34%, rgba(31,81,69,.05), transparent 62%),
+    var(--obsidian);
+  background-attachment:fixed;
+}
+h1,h2.sec,.close h2{letter-spacing:-.018em;}
+.lede{color:#514840;}
+
+/* warm paper depth */
+.acard,.chcard,.term,.bacard,.diagram,.splitwrap,.traj,.reality,.pipe,.calc,.splittable{
+  box-shadow:0 1px 2px rgba(36,28,27,.05), 0 14px 30px -20px rgba(36,28,27,.28);
+}
+.acard,.term,.bacard,.chcard{border-radius:2px;}
+.eyebrow::before{background:var(--gold); width:34px;}
+
+.acard .tag{color:var(--wine); border-color:rgba(142,47,69,.32); background:rgba(142,47,69,.05);}
+.rcell.warn .rv2,.warn-em,.capval.hot,.delta .big.neg,.bacard li::before{color:var(--wine);}
+.rcell.good .rv2{color:var(--signal);}
+
+.chcard{background:linear-gradient(180deg,#F5F0E6,#EFE8DA);}
+.chcard::after{background:linear-gradient(90deg,var(--gold),var(--gold-dim));}
+.chcard:hover{box-shadow:0 2px 5px rgba(36,28,27,.07), 0 24px 46px -24px rgba(138,106,34,.5);}
+.bacard.after{background:linear-gradient(180deg,rgba(31,81,69,.06),#F3EDE2);}
+.term.hi{background:linear-gradient(180deg,rgba(138,106,34,.11),#F3EDE2);}
+
+input[type=range]{background:#CFC0A8;}
+input[type=range]::-webkit-slider-thumb{border-color:var(--panel); box-shadow:0 0 0 1px var(--gold-dim), 0 2px 6px rgba(36,28,27,.22);}
+.pipenav button[aria-selected="true"]{background:#EFE7DA;}
+.switchbar button[aria-selected="true"]{background:var(--bone); color:#F3EBDD;}
+
+/* ---------- dark bookends: hero + close ---------- */
+.hero, .close, footer{
+  --obsidian:#241C1B;
+  --graphite:#2F2523;
+  --panel:#2F2523;
+  --line:#4A3D35;
+  --bone:#F3EBDD;
+  --slate:#B6A895;
+  --gold:#D2AE63;
+  --gold-dim:#B4934F;
+  color:#F3EBDD;
+}
+.hero{
+  background:
+    radial-gradient(ellipse 70% 55% at 50% 8%, rgba(210,174,99,.16), transparent 60%),
+    radial-gradient(ellipse 60% 50% at 80% 70%, rgba(31,81,69,.20), transparent 62%),
+    linear-gradient(170deg,#2C2220 0%, #241C1B 55%, #1D1716 100%);
+  border-bottom:1px solid #4A3D35;
+}
+.hero-grid{opacity:.34;}
+.hero-sub, .byline{color:#C7B9A6;}
+.byline b{color:#F3EBDD;}
+.byline a, .marklink{color:#D2AE63; border-color:rgba(210,174,99,.5);}
+.byline a:hover, .marklink:hover{color:#F3EBDD; border-color:#F3EBDD;}
+.marks b{color:#F3EBDD;}
+.hstat{background:rgba(255,255,255,.03);}
+.hero-stats{box-shadow:none;}
+.hstat:nth-child(1) .n{color:#D2AE63;}
+.hstat:nth-child(4) .n{color:#8FBFAA;}
+h1 .rule{background:linear-gradient(90deg,#D2AE63,#8FBFAA);}
+
+.close{
+  background:
+    radial-gradient(ellipse 70% 60% at 50% 0%, rgba(210,174,99,.18), transparent 62%),
+    linear-gradient(180deg,#241C1B,#1C1615);
+  border-top:1px solid var(--line);
+}
+.close h2 em{color:#D2AE63;}
+.close p{color:#C7B9A6;}
+.close .btn{border-color:#F3EBDD; color:#F3EBDD;}
+.close .btn.primary{background:#D2AE63; border-color:#D2AE63; color:#241C1B;}
+.close .btn:hover{background:#F3EBDD; border-color:#F3EBDD; color:#241C1B;}
+.close .signoff{background:rgba(255,255,255,.04); border-color:rgba(243,235,221,.2); box-shadow:none;}
+.close .signoff .sname{color:#F3EBDD;}
+.close .signoff .srole{color:#D2AE63;}
+.close .signoff p{color:#C7B9A6;}
+.close .signoff a{color:#D2AE63; border-color:rgba(210,174,99,.5);}
+.close .signoff a:hover{color:#F3EBDD; border-color:#F3EBDD;}
+
+footer{background:#1C1615; color:#A2937F; border-top:0;}
+footer a{color:#D2AE63 !important;}
+
+/* ================= couture pass ================= */
+
+/* 1. paper grain — the single biggest "material" cue */
+body::after{
+  content:"";
+  position:fixed; inset:0; z-index:9999; pointer-events:none;
+  opacity:.055; mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* 2. air — luxury is mostly space */
+.band{padding:clamp(84px,12vw,168px) 0;}
+.wrap{max-width:1120px;}
+.lede{max-width:56ch; font-size:clamp(17px,1.65vw,19.5px); line-height:1.78; color:#4A403A; margin-bottom:56px;}
+
+/* 3. typography with intent */
+h1{font-size:clamp(46px,8.6vw,116px); line-height:.94; letter-spacing:-.03em;}
+h2.sec{font-size:clamp(32px,5vw,60px); line-height:1.06; letter-spacing:-.022em;}
+h2.sec em, h1 .it, .close h2 em{font-style:italic;}
+.eyebrow{font-size:10px; letter-spacing:.34em; color:var(--gold); margin-bottom:26px;}
+.eyebrow::before{width:40px; background:var(--gold-dim);}
+
+/* figures set like a jeweller's price tag */
+.hstat .n,.amt,.rv2,.lval,.capval,.term .b,.pnlrow b,.delta .big,.chnum{
+  font-variant-numeric:lining-nums tabular-nums;
+  letter-spacing:.005em;
+}
+
+/* 4. hairline detailing instead of heavy shadow */
+.acard,.chcard,.term,.bacard,.diagram,.splitwrap,.traj,.reality,.pipe,.calc,.splittable{
+  box-shadow:0 1px 1px rgba(36,28,27,.03), 0 18px 40px -30px rgba(36,28,27,.38);
+}
+.splitwrap,.traj,.term.hi{position:relative;}
+.splitwrap::after,.traj::after,.term.hi::after{
+  content:""; position:absolute; inset:9px; border:1px solid rgba(122,90,22,.17); pointer-events:none;
+}
+
+/* 5. a brass lozenge on every section seam */
+.band + .band::before{
+  content:"◆";
+  position:absolute; top:-8px; left:50%; transform:translateX(-50%);
+  font-size:8px; line-height:1; color:var(--gold-dim);
+  background:var(--obsidian); padding:0 16px;
+}
+
+/* 6. couture buttons */
+.btn{padding:20px 42px; letter-spacing:.24em; font-size:10.5px; border-width:1px;}
+
+/* 7. the hero as a framed plate */
+.hero::after{
+  content:""; position:absolute; inset:clamp(14px,2.2vw,30px);
+  border:1px solid rgba(210,174,99,.24); pointer-events:none; z-index:3;
+}
+.hero{background-attachment:local;}
+.marks{font-size:11px; letter-spacing:.26em; margin-bottom:44px;}
+.marks .x{font-family:var(--ff-display); font-style:italic; font-size:17px; color:#D2AE63;}
+.hero-sub{line-height:1.75;}
+.hstat{padding:26px 22px;}
+.hstat .l{letter-spacing:.2em;}
+
+/* 8. quiet, slower motion */
+.rv{transition:opacity .95s ease, transform .95s cubic-bezier(.16,.84,.24,1);}
+.chcard{transition:transform .5s cubic-bezier(.16,.84,.24,1), box-shadow .5s ease, border-color .5s ease;}
+.chcard::after{transition:width .7s cubic-bezier(.16,.84,.24,1);}
+
+/* 9. section headings get a touch of italic contrast */
+.splitcol .who,.pipepane h3,.tlbody h4,.chcard h3,.term .b{letter-spacing:-.012em;}
+.signoff{position:relative;}
+.signoff::after{content:""; position:absolute; inset:9px; border:1px solid rgba(210,174,99,.22); pointer-events:none;}
+.wordmark{font-family:var(--ff-display); font-size:18px; letter-spacing:.12em; border-bottom-color:rgba(210,174,99,.45);}
+.marks b:first-of-type{font-family:var(--ff-display); font-size:18px; letter-spacing:.1em; text-transform:none;}
+</style>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="marks">
+      <b>Famous City Limousine</b><span class="x">×</span><b><a href="https://axzro.com" target="_blank" rel="noopener" class="marklink wordmark">AXZRO Inc.</a></b>
+      <span style="color:var(--line)">|</span>
+      <span>Partnership Proposal · Prepared for Rose</span>
+    </div>
+    <div class="byline">
+      Presented by <b>MD Anisur Rahman Chowdhury</b> — Chief Executive Officer &amp; Chief Technology Officer,
+      AXZRO Inc. · <a href="https://axzro.com" target="_blank" rel="noopener">axzro.com</a>
+    </div>
+
+    <h1>Ten cars. <span class="it">One</span> phone line.<span class="rule"></span></h1>
+
+    <p class="hero-sub">
+      That's the ceiling right now. Every booking starts with someone calling (415) 341-5381 or
+      clicking through to a third-party reservation page. It works — but it only ever serves one
+      rider at a time. This proposal is about the other kind of customer: the hotel concierge, the
+      corporate travel manager, the event planner who books forty rides at once and never stops.
+    </p>
+
+    <div class="hero-stats">
+      <div class="hstat"><span class="n">10</span><span class="l">Vehicles in fleet</span></div>
+      <div class="hstat"><span class="n">1</span><span class="l">Booking channel today</span></div>
+      <div class="hstat"><span class="n">0</span><span class="l">Corporate accounts</span></div>
+      <div class="hstat"><span class="n">3</span><span class="l">B2B channels to open</span></div>
+    </div>
+
+    <div class="scrollcue"><span class="dot"></span> Scroll — the whole plan is on this page</div>
+  </div>
+</header>
+
+<!-- ============ AUDIT ============ -->
+<section class="band">
+  <div class="wrap">
+    <p class="eyebrow rv">01 — Where the business stands</p>
+    <h2 class="sec rv">The fleet isn't the problem.<br>The <em>front door</em> is.</h2>
+    <p class="lede rv">
+      Famous City Limousine has the vehicles, the chauffeurs, the TCP license, and a genuinely good
+      reputation across the Bay Area. What it doesn't have is a way for a business to buy from it.
+      Here is what we found looking at the operation from the outside, the way a hotel's
+      procurement team would.
+    </p>
+
+    <div class="audit">
+      <div class="acard rv">
+        <span class="tag">Booking</span>
+        <h3>Reservations leave your website</h3>
+        <p>"Book Now" and "Contact" both send visitors to an external reservation system on a different
+           domain. You lose the visitor, the design, the data, and the chance to follow up.</p>
+      </div>
+      <div class="acard rv">
+        <span class="tag">Sales</span>
+        <h3>No account, no contract, no portal</h3>
+        <p>A concierge who wants a standing arrangement has no way to open one. There's no rate card,
+           no net-30 terms, no way to add authorized bookers. So they call a competitor who has all three.</p>
+      </div>
+      <div class="acard rv">
+        <span class="tag">Operations</span>
+        <h3>Dispatch lives in your head and your phone</h3>
+        <p>Assigning drivers, confirming pickups, chasing invoices — every one of these is manual,
+           and every one of them scales with your personal hours, not with the fleet.</p>
+      </div>
+      <div class="acard rv">
+        <span class="tag">Demand</span>
+        <h3>Every month starts at zero</h3>
+        <p>Retail work is one-and-done. A wedding books once. Contract work renews on its own —
+           the airport run at 6am Tuesday happens fifty-two times a year without a single phone call.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE SHIFT ============ -->
+<section class="band">
+  <div class="wrap">
+    <p class="eyebrow rv">02 — The shift</p>
+    <h2 class="sec rv">From selling <em>rides</em><br>to selling <em>accounts</em>.</h2>
+    <p class="lede rv">
+      We're not asking you to give up retail customers. Weddings, proms, and airport runs stay. We're
+      adding a second engine underneath them — one that produces bookings whether or not the phone rings.
+    </p>
+
+    <div class="switchbar rv" role="tablist" aria-label="Business model">
+      <button role="tab" id="tab-a" aria-controls="pane-a" aria-selected="true">Today · B2C only</button>
+      <button role="tab" id="tab-b" aria-controls="pane-b" aria-selected="false">With AXZRO · B2B + B2C</button>
+    </div>
+
+    <div class="modelpane pane-a on" id="pane-a" role="tabpanel" aria-labelledby="tab-a">
+      <div class="modelgrid">
+        <ul class="mfacts">
+          <li><span class="k">Who buys</span><span class="v">One rider, one occasion. <strong>Wedding, prom, airport, funeral.</strong></span></li>
+          <li><span class="k">How they find you</span><span class="v">Search, Yelp, word of mouth — then a <strong>phone call</strong>.</span></li>
+          <li><span class="k">Repeat rate</span><span class="v">Low. A bride books <strong>once in her life</strong>.</span></li>
+          <li><span class="k">Cost to win</span><span class="v">High — ads, quote calls, and no-shows on <strong>every single ride</strong>.</span></li>
+          <li><span class="k">Predictability</span><span class="v">Seasonal. Prom season peaks; <strong>January is quiet</strong>.</span></li>
+          <li><span class="k">Your time</span><span class="v">Consumed by quoting and dispatch, not by <strong>growth</strong>.</span></li>
+        </ul>
+        <div class="diagram">
+          <svg viewBox="0 0 420 300" role="img" aria-label="Diagram: many individual riders each connecting once to the fleet">
+            <defs>
+              <marker id="ar-g" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+                <path d="M0,0 L10,5 L0,10 z" fill="#B4934F"/>
+              </marker>
+            </defs>
+            <circle cx="210" cy="150" r="42" fill="none" stroke="#7A5A16" stroke-width="1.2"/>
+            <text x="210" y="146" text-anchor="middle" fill="#7A5A16" font-family="IBM Plex Mono, monospace" font-size="11">FLEET</text>
+            <text x="210" y="162" text-anchor="middle" fill="#6A5F55" font-family="IBM Plex Mono, monospace" font-size="9">10 CARS</text>
+            <g stroke="#B4934F" stroke-width="1" fill="none" marker-end="url(#ar-g)" opacity=".75">
+              <path d="M60,40 L165,125"/><path d="M40,150 L163,150"/><path d="M60,262 L165,178"/>
+              <path d="M360,40 L256,125"/><path d="M380,150 L258,150"/><path d="M360,262 L256,178"/>
+            </g>
+            <g fill="#6A5F55" font-family="IBM Plex Mono, monospace" font-size="8.5" text-anchor="middle">
+              <circle cx="48" cy="32" r="13" fill="none" stroke="#BFB09A"/><text x="48" y="35">1×</text>
+              <circle cx="28" cy="150" r="13" fill="none" stroke="#BFB09A"/><text x="28" y="153">1×</text>
+              <circle cx="48" cy="270" r="13" fill="none" stroke="#BFB09A"/><text x="48" y="273">1×</text>
+              <circle cx="372" cy="32" r="13" fill="none" stroke="#BFB09A"/><text x="372" y="35">1×</text>
+              <circle cx="392" cy="150" r="13" fill="none" stroke="#BFB09A"/><text x="392" y="153">1×</text>
+              <circle cx="372" cy="270" r="13" fill="none" stroke="#BFB09A"/><text x="372" y="273">1×</text>
+            </g>
+            <text x="210" y="292" text-anchor="middle" fill="#6A5F55" font-family="IBM Plex Mono, monospace" font-size="9" letter-spacing="1.5">SIX CUSTOMERS · SIX RIDES · SIX SALES</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="modelpane pane-b" id="pane-b" role="tabpanel" aria-labelledby="tab-b">
+      <div class="modelgrid">
+        <ul class="mfacts">
+          <li><span class="k">Who buys</span><span class="v">An <strong>account</strong> — a hotel, a company, an event firm booking all year.</span></li>
+          <li><span class="k">How they find you</span><span class="v">Outbound from AXZRO, then a <strong>self-serve corporate portal</strong>.</span></li>
+          <li><span class="k">Repeat rate</span><span class="v">Continuous. One signed hotel can mean <strong>dozens of rides a month</strong>.</span></li>
+          <li><span class="k">Cost to win</span><span class="v">Paid once per account, then <strong>near zero</strong> per ride.</span></li>
+          <li><span class="k">Predictability</span><span class="v">Contracted volume gives you a <strong>floor under every month</strong>.</span></li>
+          <li><span class="k">Your time</span><span class="v">Spent on cars and drivers. <strong>AXZRO runs the rest.</strong></span></li>
+        </ul>
+        <div class="diagram">
+          <svg viewBox="0 0 420 300" role="img" aria-label="Diagram: three business accounts each feeding repeated bookings into the fleet">
+            <defs>
+              <marker id="ar-v" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+                <path d="M0,0 L10,5 L0,10 z" fill="#1F5145"/>
+              </marker>
+            </defs>
+            <g font-family="IBM Plex Mono, monospace" font-size="8.5" text-anchor="middle">
+              <rect x="14" y="34" width="92" height="40" fill="none" stroke="#1F5145" stroke-width="1.1"/>
+              <text x="60" y="52" fill="#241C1B">HOTELS</text><text x="60" y="65" fill="#6A5F55">n × per week</text>
+              <rect x="14" y="130" width="92" height="40" fill="none" stroke="#1F5145" stroke-width="1.1"/>
+              <text x="60" y="148" fill="#241C1B">CORPORATE</text><text x="60" y="161" fill="#6A5F55">n × per week</text>
+              <rect x="14" y="226" width="92" height="40" fill="none" stroke="#1F5145" stroke-width="1.1"/>
+              <text x="60" y="244" fill="#241C1B">EVENT FIRMS</text><text x="60" y="257" fill="#6A5F55">n × per week</text>
+            </g>
+            <g stroke="#1F5145" stroke-width="1.3" fill="none" class="flowdash" marker-end="url(#ar-v)">
+              <path d="M106,54 C150,54 150,150 176,150"/>
+              <path d="M106,150 L176,150"/>
+              <path d="M106,246 C150,246 150,150 176,150"/>
+            </g>
+            <rect x="178" y="118" width="72" height="64" fill="none" stroke="#1F5145" stroke-width="1.2"/>
+            <text x="214" y="144" text-anchor="middle" fill="#1F5145" font-family="IBM Plex Mono, monospace" font-size="9">AXZRO</text>
+            <text x="214" y="157" text-anchor="middle" fill="#6A5F55" font-family="IBM Plex Mono, monospace" font-size="7.5">AUTOMATION</text>
+            <text x="214" y="169" text-anchor="middle" fill="#6A5F55" font-family="IBM Plex Mono, monospace" font-size="7.5">LAYER</text>
+            <path d="M250,150 L308,150" stroke="#7A5A16" stroke-width="1.3" fill="none" class="flowdash" marker-end="url(#ar-g)"/>
+            <circle cx="352" cy="150" r="40" fill="none" stroke="#7A5A16" stroke-width="1.2"/>
+            <text x="352" y="146" text-anchor="middle" fill="#7A5A16" font-family="IBM Plex Mono, monospace" font-size="10">FLEET</text>
+            <text x="352" y="162" text-anchor="middle" fill="#6A5F55" font-family="IBM Plex Mono, monospace" font-size="9">10 CARS</text>
+            <text x="210" y="292" text-anchor="middle" fill="#6A5F55" font-family="IBM Plex Mono, monospace" font-size="9" letter-spacing="1.5">THREE ACCOUNTS · CONTINUOUS RIDES · ONE SALE EACH</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHANNELS ============ -->
+<section class="band">
+  <div class="wrap">
+    <p class="eyebrow rv">03 — Who we go after</p>
+    <h2 class="sec rv">Three doors, all in the <em>Bay Area</em>.</h2>
+    <p class="lede rv">
+      These aren't cold leads pulled from a list. Each one has a standing transportation need, a person
+      whose job it is to solve it, and a strong preference for a licensed local operator over a rideshare app.
+    </p>
+    <div class="chan">
+      <div class="chcard rv">
+        <span class="chnum">CHANNEL 01</span>
+        <h3>Luxury hotels</h3>
+        <p class="chwant">They need: guaranteed airport transfers</p>
+        <ul>
+          <li>Concierge desk books on the guest's behalf, all hours</li>
+          <li>Fixed SFO / OAK / SJC rates, no surprise surge</li>
+          <li>Named chauffeurs, uniform standard, guest-facing branding</li>
+          <li>One monthly invoice instead of hundreds of receipts</li>
+        </ul>
+      </div>
+      <div class="chcard rv">
+        <span class="chnum">CHANNEL 02</span>
+        <h3>Corporate clients</h3>
+        <p class="chwant">They need: executive & client transport</p>
+        <ul>
+          <li>Travel manager opens an account with cost centers</li>
+          <li>Roadshows, board visits, recurring executive runs</li>
+          <li>Duty-of-care records: who rode, when, which driver</li>
+          <li>Net-30 billing that fits their procurement rules</li>
+        </ul>
+      </div>
+      <div class="chcard rv">
+        <span class="chnum">CHANNEL 03</span>
+        <h3>Event management firms</h3>
+        <p class="chwant">They need: multi-vehicle coordination</p>
+        <ul>
+          <li>Weddings, galas, conferences — twenty cars in one night</li>
+          <li>Shuttle loops and timed manifests, not single pickups</li>
+          <li>One planner controls the schedule from a shared board</li>
+          <li>They book you again for every event they run</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE SPLIT (signature) ============ -->
+<section class="band">
+  <div class="wrap">
+    <p class="eyebrow rv">04 — How the partnership divides</p>
+    <h2 class="sec rv">You keep the <em>wheels</em>.<br>We take <em>everything else</em>.</h2>
+    <p class="lede rv">
+      This is the heart of the agreement. Two lanes run in parallel — gold is yours, violet is ours.
+      They only touch at four handoff points, and at every one of them the system does the passing,
+      not a phone call.
+    </p>
+
+    <div class="splitwrap rv">
+      <svg viewBox="0 0 1000 260" role="img" aria-label="Two parallel lanes: Rose's operations lane and AXZRO's automation lane, meeting at four handoff points">
+        <defs>
+          <linearGradient id="gg" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#B4934F"/><stop offset="100%" stop-color="#7A5A16"/>
+          </linearGradient>
+          <linearGradient id="vv" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#6E9A8C"/><stop offset="100%" stop-color="#1F5145"/>
+          </linearGradient>
+        </defs>
+
+        <text x="8" y="46" fill="#7A5A16" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="2">ROSE</text>
+        <text x="8" y="228" fill="#1F5145" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="2">AXZRO</text>
+
+        <line x1="70" y1="70" x2="960" y2="70" stroke="url(#gg)" stroke-width="2.5"/>
+        <line x1="70" y1="200" x2="960" y2="200" stroke="url(#vv)" stroke-width="2.5"/>
+
+        <!-- handoff verticals -->
+        <g stroke="#BFB09A" stroke-width="1" stroke-dasharray="3 4">
+          <line x1="220" y1="70" x2="220" y2="200"/>
+          <line x1="440" y1="70" x2="440" y2="200"/>
+          <line x1="660" y1="70" x2="660" y2="200"/>
+          <line x1="880" y1="70" x2="880" y2="200"/>
+        </g>
+
+        <g font-family="IBM Plex Mono, monospace" font-size="9" fill="#6A5F55" text-anchor="middle">
+          <text x="220" y="140">VEHICLE STATUS</text>
+          <text x="440" y="140">DRIVER ASSIGNED</text>
+          <text x="660" y="140">RIDE COMPLETE</text>
+          <text x="880" y="140">MONTHLY CLOSE</text>
+        </g>
+
+        <!-- gold nodes -->
+        <g>
+          <circle cx="220" cy="70" r="6" fill="#7A5A16"/><circle cx="440" cy="70" r="6" fill="#7A5A16"/>
+          <circle cx="660" cy="70" r="6" fill="#7A5A16"/><circle cx="880" cy="70" r="6" fill="#7A5A16"/>
+        </g>
+        <g font-family="Instrument Sans, sans-serif" font-size="12" fill="#241C1B" text-anchor="middle">
+          <text x="220" y="52">Maintenance & readiness</text>
+          <text x="440" y="52">Chauffeur roster</text>
+          <text x="660" y="52">Service quality</text>
+          <text x="880" y="52">Fleet investment</text>
+        </g>
+
+        <!-- violet nodes -->
+        <g>
+          <circle cx="220" cy="200" r="6" fill="#1F5145"/><circle cx="440" cy="200" r="6" fill="#1F5145"/>
+          <circle cx="660" cy="200" r="6" fill="#1F5145"/><circle cx="880" cy="200" r="6" fill="#1F5145"/>
+        </g>
+        <g font-family="Instrument Sans, sans-serif" font-size="12" fill="#241C1B" text-anchor="middle">
+          <text x="220" y="226">Availability engine</text>
+          <text x="440" y="226">Auto-dispatch</text>
+          <text x="660" y="226">Invoice & payment</text>
+          <text x="880" y="226">Reporting & renewals</text>
+        </g>
+      </svg>
+      <div class="laneleg">
+        <span><i style="background:#7A5A16"></i>Rose — physical operations</span>
+        <span><i style="background:#1F5145"></i>AXZRO — digital operations</span>
+        <span><i style="background:#BFB09A"></i>Automated handoff</span>
+      </div>
+    </div>
+
+    <div class="splittable">
+      <div class="splitcol col-rose">
+        <h4>Lane one</h4>
+        <p class="who">Rose keeps</p>
+        <ul>
+          <li>Ownership of the fleet and the brand</li>
+          <li>All ten vehicles: maintenance, registration, insurance</li>
+          <li>Hiring, training, and scheduling chauffeurs</li>
+          <li>Service standards inside the car</li>
+          <li>Final say on rates, routes, and which accounts we accept</li>
+          <li>Fuel, tolls, parking, and licensing (TCP 37588B)</li>
+        </ul>
+      </div>
+      <div class="splitcol col-ax">
+        <h4>Lane two</h4>
+        <p class="who">AXZRO takes</p>
+        <ul>
+          <li>The website, brand system, and everything customers see</li>
+          <li>Finding and closing hotel, corporate, and event accounts</li>
+          <li>The booking, quoting, and dispatch platform</li>
+          <li>Invoicing, payment collection, and chasing late accounts</li>
+          <li>Support desk, driver app, and all IT infrastructure</li>
+          <li>Reporting, analytics, and account renewals</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PIPELINE ============ -->
+<section class="band">
+  <div class="wrap">
+    <p class="eyebrow rv">05 — The system we build</p>
+    <h2 class="sec rv">One platform, <em>seven stages</em>,<br>from stranger to repeat account.</h2>
+    <p class="lede rv">
+      Click through each stage. Everything marked AXZRO runs without you touching it — that's the
+      point. Your job starts and ends at the car.
+    </p>
+
+    <div class="pipe rv">
+      <div class="pipenav" role="tablist" aria-orientation="vertical" aria-label="Automation stages">
+        <button role="tab" aria-selected="true" data-p="0"><span class="idx">01</span>Find the account</button>
+        <button role="tab" aria-selected="false" data-p="1"><span class="idx">02</span>Quote & contract</button>
+        <button role="tab" aria-selected="false" data-p="2"><span class="idx">03</span>Book the ride</button>
+        <button role="tab" aria-selected="false" data-p="3"><span class="idx">04</span>Dispatch & assign</button>
+        <button role="tab" aria-selected="false" data-p="4"><span class="idx">05</span>Run the ride</button>
+        <button role="tab" aria-selected="false" data-p="5"><span class="idx">06</span>Invoice & collect</button>
+        <button role="tab" aria-selected="false" data-p="6"><span class="idx">07</span>Renew & grow</button>
+      </div>
+      <div class="pipebody">
+        <div class="pipepane on" role="tabpanel">
+          <h3>Find the account</h3>
+          <p class="owner">Owner — AXZRO</p>
+          <p>We build a live list of every hotel, corporate office, and event firm in your service radius,
+             then work it: outreach sequences, follow-ups, and a proposal page built for each prospect.</p>
+          <ul class="feat">
+            <li>Bay Area target list, scored by fleet fit and likely volume</li>
+            <li>Email and LinkedIn sequences written per channel</li>
+            <li>AI assistant on the site answering and qualifying inbound 24/7</li>
+            <li>Every conversation logged in one CRM you can read anytime</li>
+          </ul>
+        </div>
+        <div class="pipepane" role="tabpanel">
+          <h3>Quote &amp; contract</h3>
+          <p class="owner">Owner — AXZRO · rates approved by Rose</p>
+          <p>Instead of a phone quote, a prospect gets a priced proposal the same day. Corporate rate
+             cards, event manifests, and hotel transfer tariffs are all generated from rules you sign off on once.</p>
+          <ul class="feat">
+            <li>Instant quote engine — vehicle, distance, duration, hours</li>
+            <li>Negotiated corporate rate cards with volume tiers</li>
+            <li>E-signature agreements and net-30 terms</li>
+            <li>You approve the pricing rules; the system applies them forever</li>
+          </ul>
+        </div>
+        <div class="pipepane" role="tabpanel">
+          <h3>Book the ride</h3>
+          <p class="owner">Owner — AXZRO</p>
+          <p>Bookings come home. No more handing your customer to an outside reservation page — the
+             booking flow lives on your own site, keeps your branding, and knows who the customer is.</p>
+          <ul class="feat">
+            <li>Corporate portal: multiple authorized bookers per account</li>
+            <li>Real-time availability across all ten vehicles</li>
+            <li>Recurring and bulk bookings — a full event manifest in one upload</li>
+            <li>Retail booking stays open for weddings, proms, and airport runs</li>
+          </ul>
+        </div>
+        <div class="pipepane" role="tabpanel">
+          <h3>Dispatch &amp; assign</h3>
+          <p class="owner">Owner — AXZRO system · staffed by Rose</p>
+          <p>The platform proposes the assignment — the right vehicle, the nearest available chauffeur,
+             the buffer for traffic. You confirm or override from your phone. This is the handoff point
+             between the two lanes.</p>
+          <ul class="feat">
+            <li>Automatic vehicle and driver matching with conflict detection</li>
+            <li>Driver app: job details, navigation, and status updates</li>
+            <li>Maintenance blocks so a car in the shop can't be booked</li>
+            <li>Rose keeps final override on every assignment</li>
+          </ul>
+        </div>
+        <div class="pipepane" role="tabpanel">
+          <h3>Run the ride</h3>
+          <p class="owner">Owner — Rose · visibility by AXZRO</p>
+          <p>Your chauffeurs do what they already do well. The system handles everything the passenger
+             and the account expect around it.</p>
+          <ul class="feat">
+            <li>Automatic confirmations, reminders, and "your driver is here" alerts</li>
+            <li>Live tracking link for the guest and the concierge who booked</li>
+            <li>Flight tracking so airport pickups adjust to delays</li>
+            <li>Digital ride record: driver, vehicle, times, and route</li>
+          </ul>
+        </div>
+        <div class="pipepane" role="tabpanel">
+          <h3>Invoice &amp; collect</h3>
+          <p class="owner">Owner — AXZRO</p>
+          <p>The part that quietly costs limo operators the most money. Every completed ride bills itself,
+             and unpaid accounts get chased by the system, not by you.</p>
+          <ul class="feat">
+            <li>Card, ACH, and corporate net-30 all supported</li>
+            <li>One consolidated monthly statement per business account</li>
+            <li>Automatic dunning on overdue invoices</li>
+            <li>Transparent shared ledger — both partners see the same numbers</li>
+          </ul>
+        </div>
+        <div class="pipepane" role="tabpanel">
+          <h3>Renew &amp; grow</h3>
+          <p class="owner">Owner — AXZRO</p>
+          <p>An account that renews is worth more than one you win. We watch usage, catch accounts going
+             quiet, and go back for more volume before the contract ends.</p>
+          <ul class="feat">
+            <li>Monthly performance review with every account</li>
+            <li>Alerts when a hotel's booking volume drops</li>
+            <li>Utilization data that tells you which vehicle to buy next</li>
+            <li>Referral pipeline — planners talk to other planners</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WEBSITE ============ -->
+<section class="band">
+  <div class="wrap">
+    <p class="eyebrow rv">06 — famouscitylimo.com, rebuilt</p>
+    <h2 class="sec rv">The website should <em>close</em>,<br>not just describe.</h2>
+    <p class="lede rv">
+      The current site is a brochure with a phone number on it. The rebuild is a sales floor that
+      works at 2am — with a booking engine, a corporate portal, and an AI concierge that answers
+      before a competitor does.
+    </p>
+    <div class="ba">
+      <div class="bacard rv">
+        <h4>Today</h4>
+        <ul>
+          <li>Booking hands visitors to a third-party page</li>
+          <li>Nine near-identical service pages competing with each other</li>
+          <li>No prices until someone calls</li>
+          <li>No business or account section at all</li>
+          <li>Contact link goes to the reservation system, not to you</li>
+          <li>No way to know who visited or what they wanted</li>
+        </ul>
+      </div>
+      <div class="bacard after rv">
+        <h4>After the rebuild</h4>
+        <ul>
+          <li>Booking and payment happen on your own domain</li>
+          <li>Clean structure: retail, corporate, events — three real paths</li>
+          <li>Instant quotes on screen, before anyone picks up a phone</li>
+          <li>A partner portal where accounts book and see their invoices</li>
+          <li>AI concierge answering questions and capturing leads overnight</li>
+          <li>Full analytics: what people search, book, and abandon</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ECONOMICS ============ -->
+<section class="band">
+  <div class="wrap">
+    <p class="eyebrow rv">07 — The economics</p>
+    <h2 class="sec rv">You're clearing <em>$15–20K</em> a month<br>from ten luxury vehicles.</h2>
+    <p class="lede rv">
+      Let's be direct about what that means. Ten cars, a licensed operation, chauffeurs on payroll, and
+      a strong local name — and the monthly result is roughly what a single senior employee costs. That
+      isn't a reflection of the fleet or the service. It's what happens when a capital-heavy business
+      sells one ride at a time, into a retail market that black-car apps are compressing every year.
+      The number isn't just low. Left alone, it drifts <em class="warn-em">down</em>.
+    </p>
+
+    <div class="reality rv">
+      <div class="rcell warn">
+        <div class="rk">Where you are</div>
+        <div class="rv2">$15–20K</div>
+        <p>Per month, and it swings with the season — prom and wedding months carry the quiet ones.
+           There is no floor under a bad January.</p>
+      </div>
+      <div class="rcell warn">
+        <div class="rk">The pressure</div>
+        <div class="rv2">Retail is eroding</div>
+        <p>Every year more one-off airport and night-out work goes to apps. Retail limo demand is the
+           part of your market shrinking fastest — and it's the only part you sell to.</p>
+      </div>
+      <div class="rcell warn">
+        <div class="rk">The trap</div>
+        <div class="rv2">Assets idle</div>
+        <p>Ten vehicles depreciate, get insured, and get maintained whether they move or not. Every idle
+           hour is a cost you already paid for.</p>
+      </div>
+      <div class="rcell good">
+        <div class="rk">What changes it</div>
+        <div class="rv2">Contract volume</div>
+        <p>Business accounts fill the idle hours with rides you never had to sell twice — using the same
+           ten cars and the same drivers you already pay for.</p>
+      </div>
+    </div>
+
+    <p class="lede rv">
+      Below is the honest version of the argument, and you can test it yourself. The key line is the
+      third one: your fixed costs do not move when the cars do. Once overhead is covered, roughly
+      <em class="gold-em">two thirds of every additional contract fare falls straight through to profit</em>.
+      That is the whole reason a half share of the new business is worth multiples of all of the old one.
+      AXZRO earns nothing until contract volume exists — if the B2B engine doesn't produce, we don't get paid.
+    </p>
+
+    <div class="calc rv">
+      <div class="calcinputs">
+        <div class="field">
+          <label for="retail">
+            <span class="lname">Retail rides per month</span>
+            <span class="lval" id="retail-v">110</span>
+          </label>
+          <input type="range" id="retail" min="40" max="260" value="110" step="5">
+          <p class="hint">Weddings, proms, airport runs — the business you have today.</p>
+        </div>
+        <div class="field">
+          <label for="contract">
+            <span class="lname">Contract rides per month (added)</span>
+            <span class="lval" id="contract-v">280</span>
+          </label>
+          <input type="range" id="contract" min="0" max="700" value="280" step="10">
+          <p class="hint">Hotel, corporate, and event volume that AXZRO brings in.</p>
+        </div>
+        <div class="field">
+          <label for="lift">
+            <span class="lname">Retail lift from the new site</span>
+            <span class="lval" id="lift-v">+20%</span>
+          </label>
+          <input type="range" id="lift" min="0" max="60" value="20" step="5">
+          <p class="hint">Extra retail bookings the rebuilt site converts on its own.</p>
+        </div>
+
+        <div class="capacity">
+          <div class="caphead">
+            <span class="lname">Fleet capacity used</span>
+            <span class="capval" id="cap-v">62%</span>
+          </div>
+          <div class="captrack"><div class="capfill" id="cap-bar"></div></div>
+          <p class="hint" id="cap-note">
+            That's 1.9 rides per car per day across ten vehicles — comfortably inside what your
+            existing fleet and chauffeurs can run.
+          </p>
+        </div>
+      </div>
+
+      <div class="calcout">
+        <div class="bars">
+          <div class="barrow">
+            <div class="barhead">
+              <span class="t">Rose today · 100% of B2C · your $15–20K range</span>
+              <span class="amt gold" id="now-amt">$16,200</span>
+            </div>
+            <div class="bartrack"><div class="barfill fill-now" id="now-bar"></div></div>
+          </div>
+          <div class="barrow">
+            <div class="barhead">
+              <span class="t">Rose with AXZRO · 50% of B2B + B2C</span>
+              <span class="amt violet" id="new-amt">$19,470</span>
+            </div>
+            <div class="bartrack"><div class="barfill fill-new" id="new-bar"></div></div>
+          </div>
+        </div>
+
+        <div class="delta">
+          <span class="lab">Change in Rose's monthly take-home</span>
+          <span class="big" id="delta-amt">+$20,730</span>
+        </div>
+
+        <div class="pnl">
+          <div class="pnlrow"><span>Retail contribution</span><b id="pnl-retail">$36,300</b></div>
+          <div class="pnlrow"><span>Contract contribution</span><b id="pnl-contract">$55,160</b></div>
+          <div class="pnlrow"><span>Fixed overhead — unchanged</span><b id="pnl-fixed">−$13,000</b></div>
+          <div class="pnlrow"><span>Platform &amp; automation cost</span><b id="pnl-plat">−$2,500</b></div>
+          <div class="pnlrow total"><span>Net profit pool</span><b id="pnl-pool">$75,960</b></div>
+          <div class="pnlrow split"><span>Rose 50% · AXZRO 50%</span><b id="pnl-each">$37,980 each</b></div>
+        </div>
+
+        <p class="breakeven" id="breakeven">
+          Break-even sits at <b>—</b> contract rides per month.
+        </p>
+
+        <div class="assump">
+          <strong style="color:var(--bone); font-weight:500">The correction that matters:</strong>
+          insurance, vehicle payments, storage, licensing, and admin are <em>fixed</em> — you pay them
+          on a slow month and a busy one. So a new contract ride only costs you a chauffeur, fuel, and
+          wear: about <code>$105</code>. Everything above that drops to profit. This is why filling
+          idle hours moves your bottom line far more than raising prices ever could.
+          <br><br>
+          <strong style="color:var(--bone); font-weight:500">Assumptions, all editable with your books:</strong>
+          retail fare <code>$425</code> · blended contract fare <code>$310</code> (hotel transfers low,
+          corporate hourly and multi-vehicle event work high) · variable cost per ride <code>$105</code> ·
+          acquisition <code>$45</code> retail vs <code>$8</code> contract · fixed overhead
+          <code>$13,000/mo</code> · platform cost <code>$2,500/mo</code>. Illustrative, not a guarantee.
+        </div>
+      </div>
+    </div>
+
+    <div class="traj rv">
+      <h4>Twelve-month trajectory — Rose's monthly take-home</h4>
+      <svg id="trajsvg" viewBox="0 0 960 340" role="img"
+           aria-label="Line chart comparing Rose's declining take-home if nothing changes against a rising take-home under the AXZRO partnership over twelve months">
+        <g id="traj-grid" stroke="#C9BCA6" stroke-width="1"></g>
+        <g id="traj-ylabels" font-family="IBM Plex Mono, monospace" font-size="10" fill="#6A5F55"></g>
+        <g id="traj-xlabels" font-family="IBM Plex Mono, monospace" font-size="10" fill="#6A5F55" text-anchor="middle"></g>
+        <path id="traj-now" fill="none" stroke="#8E2F45" stroke-width="2.5" stroke-dasharray="6 5"/>
+        <path id="traj-new" fill="none" stroke="#1F5145" stroke-width="2.5"/>
+        <path id="traj-fill" fill="rgba(31,81,69,.07)" stroke="none"/>
+        <circle id="traj-endnew" r="5" fill="#1F5145"/>
+        <circle id="traj-endnow" r="5" fill="#8E2F45"/>
+        <text id="traj-tagnew" font-family="Bodoni Moda, serif" font-size="20" fill="#1F5145" text-anchor="end"></text>
+        <text id="traj-tagnow" font-family="Bodoni Moda, serif" font-size="20" fill="#8E2F45" text-anchor="end"></text>
+      </svg>
+      <div class="trajleg">
+        <span><i style="background:#8E2F45"></i>If nothing changes — retail-only, drifting down</span>
+        <span><i style="background:#1F5145"></i>With AXZRO — 50% of a growing pool</span>
+      </div>
+      <p class="assump" style="margin-top:24px; border-top:1px solid var(--line); padding-top:20px;">
+        The declining line assumes retail volume erodes about 1% a month, which is conservative against
+        current black-car app trends. The rising line assumes contract volume ramps in from month three
+        and reaches the level you set above by month nine — no account arrives overnight. Both lines move
+        when you move the sliders.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TIMELINE ============ -->
+<section class="band">
+  <div class="wrap">
+    <p class="eyebrow rv">08 — How we get there</p>
+    <h2 class="sec rv">Ninety days to the <em>first signed account</em>.</h2>
+    <p class="lede rv">
+      Ordered because it has to be — the brand and the booking engine exist before we sell, so the
+      first hotel that says yes meets a business that's ready for them.
+    </p>
+    <div class="tl">
+      <div class="tlitem rv">
+        <div class="tlph">Phase 01<small>Weeks 1–3</small></div>
+        <div class="tlbody">
+          <h4>Foundation</h4>
+          <p>We sit down with your books, rates, and driver schedule. Partnership agreement signed,
+             baseline numbers locked, brand system designed.</p>
+          <div class="chips"><span class="chip">Partnership agreement</span><span class="chip">Financial baseline</span><span class="chip">Brand identity</span><span class="chip">Rate card</span></div>
+        </div>
+      </div>
+      <div class="tlitem rv">
+        <div class="tlph">Phase 02<small>Weeks 3–8</small></div>
+        <div class="tlbody">
+          <h4>Platform build</h4>
+          <p>New site, booking engine, corporate portal, driver app, and invoicing — built, tested with
+             your real drivers, and launched on famouscitylimo.com.</p>
+          <div class="chips"><span class="chip">Website rebuild</span><span class="chip">Booking engine</span><span class="chip">Driver app</span><span class="chip">Payments</span><span class="chip">AI concierge</span></div>
+        </div>
+      </div>
+      <div class="tlitem rv">
+        <div class="tlph">Phase 03<small>Weeks 8–13</small></div>
+        <div class="tlbody">
+          <h4>First accounts</h4>
+          <p>Outreach begins across all three channels. Target: three signed accounts — one hotel, one
+             corporate, one event firm — running live bookings through the system.</p>
+          <div class="chips"><span class="chip">Target list</span><span class="chip">Outreach</span><span class="chip">Pilot contracts</span><span class="chip">First B2B invoices</span></div>
+        </div>
+      </div>
+      <div class="tlitem rv">
+        <div class="tlph">Phase 04<small>Month 4 onward</small></div>
+        <div class="tlbody">
+          <h4>Scale</h4>
+          <p>Widen the account base, use utilization data to decide when the eleventh car pays for itself,
+             and open adjacent markets — airport contracts, hotel groups, corporate campuses.</p>
+          <div class="chips"><span class="chip">Account growth</span><span class="chip">Fleet expansion case</span><span class="chip">Regional reach</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TERMS ============ -->
+<section class="band">
+  <div class="wrap">
+    <p class="eyebrow rv">09 — The terms, in plain language</p>
+    <h2 class="sec rv">What each side <em>signs</em>.</h2>
+    <div class="terms">
+      <div class="term hi rv">
+        <div class="h">Profit share</div>
+        <div class="b">50 / 50</div>
+        <p>An equal split of net profit — revenue after direct operating costs and platform costs. Not of
+           gross revenue, and not of the value of your vehicles.</p>
+      </div>
+      <div class="term rv">
+        <div class="h">Ownership</div>
+        <div class="b">Rose keeps 100% of the company</div>
+        <p>AXZRO takes no equity in Famous City Limousine. The fleet, the license, and the brand remain
+           entirely yours.</p>
+      </div>
+      <div class="term rv">
+        <div class="h">Upfront cost to Rose</div>
+        <div class="b">$0</div>
+        <p>AXZRO carries the build cost of the platform and the brand. We're paid from profit, which means
+           we only earn when you earn.</p>
+      </div>
+      <div class="term rv">
+        <div class="h">Term &amp; exit</div>
+        <div class="b">36 months, reviewed yearly</div>
+        <p>Either side may exit with 90 days' notice. Your customer data and domain are yours on day one
+           and on the last day.</p>
+      </div>
+      <div class="term rv">
+        <div class="h">Decision rights</div>
+        <div class="b">Rose has final say on service</div>
+        <p>Rates, which accounts we take, and anything affecting passenger experience need your approval.
+           Technology decisions are ours.</p>
+      </div>
+      <div class="term rv">
+        <div class="h">Transparency</div>
+        <div class="b">One shared ledger</div>
+        <p>Both partners see the same live dashboard: every booking, every invoice, every cost, and how
+           the split was calculated.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLOSE ============ -->
+<section class="band close">
+  <div class="wrap">
+    <h2>Rose — you built the fleet.<br>Let's build the <em>business around it</em>.</h2>
+    <p>
+      The next step is a ninety-minute session with your actual numbers. We rebuild the model on this
+      page using your books, and you decide from there. No cost, no commitment.
+    </p>
+    <div class="ctas">
+      <a class="btn primary" href="mailto:info@axzro.com?subject=Famous%20City%20Limousine%20%C3%97%20AXZRO%20partnership">Book the working session</a>
+      <a class="btn" href="https://axzro.com" target="_blank" rel="noopener">Visit axzro.com</a>
+    </div>
+
+    <div class="signoff">
+      <p class="sname">MD Anisur Rahman Chowdhury</p>
+      <p class="srole">Chief Executive Officer &amp; Chief Technology Officer · AXZRO Inc.</p>
+      <p>
+        I'll personally lead this build — the platform architecture, the automation, and the account
+        strategy. You'll be working with me directly, not with a handoff.
+        <br><br>
+        <a href="https://axzro.com" target="_blank" rel="noopener">axzro.com</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span><a href="https://axzro.com" target="_blank" rel="noopener" style="color:var(--gold); text-decoration:none;">AXZRO Inc. — axzro.com</a></span>
+    <span>MD Anisur Rahman Chowdhury · CEO &amp; CTO</span>
+    <span>Prepared for Rose · Famous City Limousine · TCP 37588B</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---- model tabs ---- */
+  var tabA = document.getElementById('tab-a'),
+      tabB = document.getElementById('tab-b'),
+      paneA = document.getElementById('pane-a'),
+      paneB = document.getElementById('pane-b');
+
+  function showModel(which){
+    var a = which === 'a';
+    tabA.setAttribute('aria-selected', a);
+    tabB.setAttribute('aria-selected', !a);
+    paneA.classList.toggle('on', a);
+    paneB.classList.toggle('on', !a);
+  }
+  tabA.addEventListener('click', function(){ showModel('a'); });
+  tabB.addEventListener('click', function(){ showModel('b'); });
+
+  /* ---- pipeline stepper ---- */
+  var navBtns = document.querySelectorAll('.pipenav button'),
+      panes = document.querySelectorAll('.pipepane');
+
+  function showStage(i){
+    navBtns.forEach(function(b, k){ b.setAttribute('aria-selected', k === i); });
+    panes.forEach(function(p, k){ p.classList.toggle('on', k === i); });
+  }
+  navBtns.forEach(function(b, i){
+    b.addEventListener('click', function(){ showStage(i); });
+    b.addEventListener('keydown', function(e){
+      if(e.key === 'ArrowDown' || e.key === 'ArrowRight'){
+        e.preventDefault();
+        var n = (i + 1) % navBtns.length; navBtns[n].focus(); showStage(n);
+      } else if(e.key === 'ArrowUp' || e.key === 'ArrowLeft'){
+        e.preventDefault();
+        var p = (i - 1 + navBtns.length) % navBtns.length; navBtns[p].focus(); showStage(p);
+      }
+    });
+  });
+
+  /* ---- economics calculator ---- */
+  /* Fixed costs (insurance, vehicle payments, storage, licensing, admin) are paid whether or not
+     a car moves. Only chauffeur, fuel and wear scale with each additional ride. */
+  var RETAIL_FARE = 425, CONTRACT_FARE = 310, VAR_COST = 105,
+      CAC_RETAIL = 45, CAC_CONTRACT = 8,
+      FIXED = 13000, PLATFORM = 2500,
+      CARS = 10, WORKDAYS = 22, RIDES_PER_CAR_DAY = 3;
+
+  var CAPACITY = CARS * WORKDAYS * RIDES_PER_CAR_DAY; // 660 rides/month
+  var retailMargin   = RETAIL_FARE - VAR_COST - CAC_RETAIL;     // 275
+  var contractMargin = CONTRACT_FARE - VAR_COST - CAC_CONTRACT; // 197
+
+  var retail = document.getElementById('retail'),
+      contract = document.getElementById('contract'),
+      lift = document.getElementById('lift');
+
+  var fmt = function(n){
+    return '$' + Math.round(n).toLocaleString('en-US');
+  };
+
+  function update(){
+    var r = +retail.value, c = +contract.value, l = +lift.value / 100;
+
+    document.getElementById('retail-v').textContent = r;
+    document.getElementById('contract-v').textContent = c;
+    document.getElementById('lift-v').textContent = '+' + lift.value + '%';
+
+    var retailNow   = r * retailMargin;
+    var now         = retailNow - FIXED;              // Rose keeps 100%, absorbs all fixed cost
+    var retailNew   = r * (1 + l) * retailMargin;
+    var contractNew = c * contractMargin;
+    var pool        = retailNew + contractNew - FIXED - PLATFORM;
+    var roseNew     = pool * 0.5;
+    var delta       = roseNew - now;
+
+    var max = Math.max(now, roseNew, 1);
+    document.getElementById('now-amt').textContent = fmt(now);
+    document.getElementById('new-amt').textContent = fmt(roseNew);
+    document.getElementById('now-bar').style.width = Math.max(0, now / max * 100) + '%';
+    document.getElementById('new-bar').style.width = Math.max(0, roseNew / max * 100) + '%';
+
+    var d = document.getElementById('delta-amt');
+    d.textContent = (delta >= 0 ? '+' : '−') + fmt(Math.abs(delta)) + ' / mo';
+    d.classList.toggle('neg', delta < 0);
+
+    /* P&L breakdown */
+    document.getElementById('pnl-retail').textContent = fmt(retailNew);
+    document.getElementById('pnl-contract').textContent = fmt(contractNew);
+    document.getElementById('pnl-fixed').textContent = '−' + fmt(FIXED);
+    document.getElementById('pnl-plat').textContent = '−' + fmt(PLATFORM);
+    document.getElementById('pnl-pool').textContent = fmt(pool);
+    document.getElementById('pnl-each').textContent = fmt(roseNew) + ' each';
+
+    /* capacity */
+    var rides = r * (1 + l) + c;
+    var util = Math.min(100, rides / CAPACITY * 100);
+    var perCarDay = rides / (CARS * WORKDAYS);
+    var capV = document.getElementById('cap-v'), capB = document.getElementById('cap-bar');
+    capV.textContent = Math.round(util) + '%';
+    capB.style.width = util + '%';
+    var hot = util > 88;
+    capV.classList.toggle('hot', hot);
+    capB.classList.toggle('hot', hot);
+    document.getElementById('cap-note').textContent = hot
+      ? 'That is ' + perCarDay.toFixed(1) + ' rides per car per day — at this level the fleet is the ' +
+        'constraint, and the utilisation data tells you it is time to add the eleventh vehicle.'
+      : 'That is ' + perCarDay.toFixed(1) + ' rides per car per day across ten vehicles — comfortably ' +
+        'inside what your existing fleet and chauffeurs can run.';
+
+    /* contract rides needed for Rose's 50% to match today's 100% */
+    var need = (2 * now + FIXED + PLATFORM - retailNew) / contractMargin;
+    need = Math.max(0, Math.ceil(need));
+    var be = document.getElementById('breakeven');
+    if(c >= need){
+      be.innerHTML = 'Break-even sits at <b>' + need + ' contract rides a month</b> — about <b>' +
+        Math.ceil(need / 22) + ' a day across the whole fleet</b>. You are modelling <b>' + c +
+        '</b>, well past that line. One committed hotel account can carry most of it on its own.';
+    } else {
+      be.innerHTML = 'Break-even sits at <b>' + need + ' contract rides a month</b> — about <b>' +
+        Math.ceil(need / 22) + ' a day across the whole fleet</b>. At <b>' + c +
+        '</b> the partnership has not yet paid for itself, which is exactly why AXZRO is paid from profit rather than a fee.';
+    }
+
+    drawTrajectory(r, c, l);
+  }
+
+  /* ---- 12-month trajectory ---- */
+  var TW = 960, TH = 340, PADL = 74, PADR = 108, PADT = 26, PADB = 46;
+  var MONTHS = ['M1','M2','M3','M4','M5','M6','M7','M8','M9','M10','M11','M12'];
+
+  function drawTrajectory(r, c, l){
+    var nowSeries = [], newSeries = [];
+    for(var m = 0; m < 12; m++){
+      // retail-only path: 1% monthly erosion, fixed overhead unchanged
+      var decay = Math.pow(0.99, m);
+      nowSeries.push(r * decay * retailMargin - FIXED);
+
+      // partnership path: site lift phases in over 4 months, contracts ramp months 3-9
+      var liftRamp = Math.min(1, m / 4);
+      var conRamp  = m < 2 ? 0 : Math.min(1, (m - 2) / 7);
+      var pool = (r * (1 + l * liftRamp) * retailMargin) + (c * conRamp * contractMargin) - FIXED - PLATFORM;
+      newSeries.push(pool * 0.5);
+    }
+
+    var peak = Math.max.apply(null, newSeries.concat(nowSeries));
+    var top = Math.max(peak * 1.15, 1000);
+
+    var X = function(i){ return PADL + i * (TW - PADL - PADR) / 11; };
+    var Y = function(v){ return TH - PADB - (v / top) * (TH - PADT - PADB); };
+
+    var path = function(arr){
+      return arr.map(function(v, i){ return (i ? 'L' : 'M') + X(i).toFixed(1) + ',' + Y(v).toFixed(1); }).join(' ');
+    };
+
+    document.getElementById('traj-now').setAttribute('d', path(nowSeries));
+    document.getElementById('traj-new').setAttribute('d', path(newSeries));
+    document.getElementById('traj-fill').setAttribute('d',
+      path(newSeries) + ' L' + X(11).toFixed(1) + ',' + Y(0).toFixed(1) + ' L' + X(0).toFixed(1) + ',' + Y(0).toFixed(1) + ' Z');
+
+    // gridlines + y labels
+    var grid = '', ylab = '';
+    for(var g = 0; g <= 4; g++){
+      var val = top * g / 4, y = Y(val).toFixed(1);
+      grid += '<line x1="' + PADL + '" y1="' + y + '" x2="' + (TW - PADR) + '" y2="' + y + '"/>';
+      ylab += '<text x="' + (PADL - 12) + '" y="' + (+y + 4) + '" text-anchor="end">' +
+              (val >= 1000 ? '$' + Math.round(val / 1000) + 'K' : '$0') + '</text>';
+    }
+    document.getElementById('traj-grid').innerHTML = grid;
+    document.getElementById('traj-ylabels').innerHTML = ylab;
+
+    var xlab = '';
+    MONTHS.forEach(function(mn, i){
+      xlab += '<text x="' + X(i).toFixed(1) + '" y="' + (TH - PADB + 24) + '">' + mn + '</text>';
+    });
+    document.getElementById('traj-xlabels').innerHTML = xlab;
+
+    var eNew = document.getElementById('traj-endnew'), eNow = document.getElementById('traj-endnow');
+    eNew.setAttribute('cx', X(11)); eNew.setAttribute('cy', Y(newSeries[11]));
+    eNow.setAttribute('cx', X(11)); eNow.setAttribute('cy', Y(nowSeries[11]));
+
+    var tNew = document.getElementById('traj-tagnew'), tNow = document.getElementById('traj-tagnow');
+    var yNew = Y(newSeries[11]), yNow = Y(nowSeries[11]);
+    if(Math.abs(yNew - yNow) < 26){ yNew -= 13; yNow += 13; }
+    tNew.setAttribute('x', TW - 12); tNew.setAttribute('y', yNew + 6);
+    tNew.textContent = fmt(newSeries[11]);
+    tNow.setAttribute('x', TW - 12); tNow.setAttribute('y', yNow + 6);
+    tNow.textContent = fmt(nowSeries[11]);
+  }
+
+  [retail, contract, lift].forEach(function(el){
+    el.addEventListener('input', update);
+  });
+  update();
+
+  /* ---- scroll reveal ---- */
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var items = document.querySelectorAll('.rv');
+  if(reduce || !('IntersectionObserver' in window)){
+    items.forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          var el = e.target;
+          var sibs = Array.prototype.slice.call(el.parentNode.children).indexOf(el);
+          el.style.transitionDelay = Math.min(sibs, 5) * 70 + 'ms';
+          el.classList.add('in');
+          io.unobserve(el);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    items.forEach(function(el){ io.observe(el); });
+  }
+})();
+</script>
+</body>
+</html>

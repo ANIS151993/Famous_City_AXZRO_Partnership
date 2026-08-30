@@ -449,7 +449,7 @@ h1,h2.sec,.close h2{letter-spacing:-.018em;}
 .lede{color:#514840;}
 
 /* warm paper depth */
-.acard,.chcard,.term,.bacard,.diagram,.splitwrap,.traj,.reality,.pipe,.calc,.splittable{
+.acard,.chcard,.term,.bacard,.diagram,.splitwrap,.traj,.reality,.pipe,.calc,.splittable,.visual-card{
   box-shadow:0 1px 2px rgba(36,28,27,.05), 0 14px 30px -20px rgba(36,28,27,.28);
 }
 .acard,.term,.bacard,.chcard{border-radius:2px;}
@@ -551,12 +551,52 @@ h2.sec em, h1 .it, .close h2 em{font-style:italic;}
 }
 
 /* 4. hairline detailing instead of heavy shadow */
-.acard,.chcard,.term,.bacard,.diagram,.splitwrap,.traj,.reality,.pipe,.calc,.splittable{
+.acard,.chcard,.term,.bacard,.diagram,.splitwrap,.traj,.reality,.pipe,.calc,.splittable,.visual-card{
   box-shadow:0 1px 1px rgba(36,28,27,.03), 0 18px 40px -30px rgba(36,28,27,.38);
 }
 .splitwrap,.traj,.term.hi{position:relative;}
 .splitwrap::after,.traj::after,.term.hi::after{
   content:""; position:absolute; inset:9px; border:1px solid rgba(122,90,22,.17); pointer-events:none;
+}
+
+.visual-band{
+  background:
+    radial-gradient(ellipse 70% 54% at 20% 20%, rgba(55,167,220,.18), transparent 64%),
+    radial-gradient(ellipse 60% 50% at 84% 32%, rgba(170,75,195,.16), transparent 62%),
+    linear-gradient(180deg,#241C1B,#1B1618 68%,#241C1B);
+  color:#F3EBDD;
+}
+.visual-band .eyebrow{color:#D2AE63;}
+.visual-band .lede{color:#C7B9A6; max-width:68ch;}
+.visual-band h2.sec{color:#F3EBDD;}
+.visual-band h2.sec em{color:#8FD4DD;}
+.visual-card{
+  position:relative;
+  overflow:hidden;
+  border:1px solid rgba(210,174,99,.26);
+  background:#0A1020;
+  padding:clamp(8px,1.4vw,14px);
+}
+.visual-card::after{
+  content:"";
+  position:absolute;
+  inset:9px;
+  border:1px solid rgba(143,212,221,.22);
+  pointer-events:none;
+}
+.visual-card img{
+  display:block;
+  width:100%;
+  border:1px solid rgba(243,235,221,.1);
+}
+.visual-caption{
+  margin:18px 0 0;
+  font-family:var(--ff-mono);
+  font-size:10.5px;
+  letter-spacing:.16em;
+  line-height:1.7;
+  text-transform:uppercase;
+  color:#AFC5CE;
 }
 
 /* 5. a brass lozenge on every section seam */
@@ -1033,10 +1073,28 @@ h2.sec em, h1 .it, .close h2 em{font-style:italic;}
   </div>
 </section>
 
+<!-- ============ VISUAL MODEL ============ -->
+<section class="band visual-band">
+  <div class="wrap">
+    <p class="eyebrow rv">06 — The operating model</p>
+    <h2 class="sec rv">The full shift, <em>on one page</em>.</h2>
+    <p class="lede rv">
+      This is the partnership in visual form: Famous City keeps the fleet and service quality, while AXZRO
+      turns the brand into a repeatable account-acquisition, booking, automation, and profit-share system.
+    </p>
+    <figure class="visual-card rv">
+      <img src="assets/axzro-famous-city-growth-model.png" alt="Infographic showing AXZRO and Famous City Limo moving from direct B2C bookings into hotels, corporate businesses, event management firms, automation, and a 50-50 profit share partnership.">
+      <figcaption class="visual-caption">
+        B2C stays active. B2B becomes the growth engine. Operations stay with Rose; automation, acquisition, and reporting move through AXZRO.
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
 <!-- ============ WEBSITE ============ -->
 <section class="band">
   <div class="wrap">
-    <p class="eyebrow rv">06 — famouscitylimo.com, rebuilt</p>
+    <p class="eyebrow rv">07 — famouscitylimo.com, rebuilt</p>
     <h2 class="sec rv">The website should <em>close</em>,<br>not just describe.</h2>
     <p class="lede rv">
       The current site is a brochure with a phone number on it. The rebuild is a sales floor that
@@ -1073,7 +1131,7 @@ h2.sec em, h1 .it, .close h2 em{font-style:italic;}
 <!-- ============ ECONOMICS ============ -->
 <section class="band">
   <div class="wrap">
-    <p class="eyebrow rv">07 — The economics</p>
+    <p class="eyebrow rv">08 — The economics</p>
     <h2 class="sec rv">You're clearing <em>$15–20K</em> a month<br>from ten luxury vehicles.</h2>
     <p class="lede rv">
       Let's be direct about what that means. Ten cars, a licensed operation, chauffeurs on payroll, and
@@ -1242,7 +1300,7 @@ h2.sec em, h1 .it, .close h2 em{font-style:italic;}
 <!-- ============ TIMELINE ============ -->
 <section class="band">
   <div class="wrap">
-    <p class="eyebrow rv">08 — How we get there</p>
+    <p class="eyebrow rv">09 — How we get there</p>
     <h2 class="sec rv">Ninety days to the <em>first signed account</em>.</h2>
     <p class="lede rv">
       Ordered because it has to be — the brand and the booking engine exist before we sell, so the
@@ -1292,7 +1350,7 @@ h2.sec em, h1 .it, .close h2 em{font-style:italic;}
 <!-- ============ TERMS ============ -->
 <section class="band">
   <div class="wrap">
-    <p class="eyebrow rv">09 — The terms, in plain language</p>
+    <p class="eyebrow rv">10 — The terms, in plain language</p>
     <h2 class="sec rv">What each side <em>signs</em>.</h2>
     <div class="terms">
       <div class="term hi rv">
